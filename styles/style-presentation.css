@@ -1,0 +1,12 @@
+.presentation {
+  min-height: 500px;
+
+  color: white;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
