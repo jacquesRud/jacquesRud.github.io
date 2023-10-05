@@ -1,3 +1,1 @@
-# jacquesRud.github.io
-
-Personal Website of Jacques
+# manueRud.github.io
