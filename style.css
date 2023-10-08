@@ -33,3 +33,21 @@ nav {
 section {
   height: 100vh;
 }
+
+h1 {
+  color: white;
+  font-size: 80px;
+  font-family: Knewave;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+h2 {
+  color: white;
+  font-size: 50px;
+  font-family: Montserrat;
+  font-weight: 400;
+  text-transform: lowercase;
+  word-wrap: break-word;
+}

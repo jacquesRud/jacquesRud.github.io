@@ -1,12 +1,21 @@
 .hero-banner {
-  background-image: url('assets/images/backgroundHeroBanner.jpg');
+  background-image: url('assets/images/background/reduced/backgroundHeroBanner-reduced.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 2;
 }
+.hero-banner-loading-image {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
 .presentation-container {
   background-image: url('assets/images/Carré_présentation.png');
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   height: 100%;
   width: 100%;
   display: flex;
@@ -15,29 +24,13 @@
   align-items: center;
 }
 
-.hero-banner h1 {
-  color: white;
-  font-size: 80px;
-  font-family: Knewave;
-  font-weight: 400;
-  word-wrap: break-word;
-  margin: 0;
-}
-
-.hero-banner h2 {
-  color: white;
-  font-size: 50px;
-  font-family: Montserrat;
-  font-weight: 400;
-  text-transform: lowercase;
-  word-wrap: break-word;
-}
-
 .icons-infos {
   display: flex;
-  gap: 160px;
+  flex-wrap: wrap;
+  gap: 20px 160px;
 }
 
 .icon-infos-element {
   display: flex;
+  align-items: center;
 }
