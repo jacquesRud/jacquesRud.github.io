@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com" />
+<link rel="preload" href="https://fonts.gstatic.com" crossorigin />
 <link
   href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
   rel="stylesheet"
@@ -14,25 +14,30 @@
     <meta charset="utf-8" />
     <title>Emmanuelle RUDLOFF</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+
     <link rel="stylesheet" href="style-hero-banner.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <nav>
-      <svg
-        width="57"
-        height="57"
-        viewBox="0 0 57 57"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M9.5 49.875V27.6094L5.225 30.875L2.375 27.075L9.5 21.6125V14.25H14.25V17.9906L28.5 7.125L54.625 27.075L51.775 30.8156L47.5 27.6094V49.875H9.5ZM14.25 45.125H26.125V35.625H30.875V45.125H42.75V23.9875L28.5 13.1219L14.25 23.9875V45.125ZM9.5 11.875C9.5 9.89583 10.1927 8.21354 11.5781 6.82812C12.9635 5.44271 14.6458 4.75 16.625 4.75C17.2979 4.75 17.862 4.5224 18.3172 4.06719C18.7724 3.61198 19 3.04792 19 2.375H23.75C23.75 4.35417 23.0573 6.03646 21.6719 7.42188C20.2865 8.80729 18.6042 9.5 16.625 9.5C15.9521 9.5 15.388 9.7276 14.9328 10.1828C14.4776 10.638 14.25 11.2021 14.25 11.875H9.5Z"
-          fill="#FBFBFB"
-        />
-      </svg>
+      <a href="#home">
+        <svg
+          width="57"
+          height="57"
+          viewBox="0 0 57 57"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="home-icon"
+        >
+          <path
+            d="M9.5 49.875V27.6094L5.225 30.875L2.375 27.075L9.5 21.6125V14.25H14.25V17.9906L28.5 7.125L54.625 27.075L51.775 30.8156L47.5 27.6094V49.875H9.5ZM14.25 45.125H26.125V35.625H30.875V45.125H42.75V23.9875L28.5 13.1219L14.25 23.9875V45.125ZM9.5 11.875C9.5 9.89583 10.1927 8.21354 11.5781 6.82812C12.9635 5.44271 14.6458 4.75 16.625 4.75C17.2979 4.75 17.862 4.5224 18.3172 4.06719C18.7724 3.61198 19 3.04792 19 2.375H23.75C23.75 4.35417 23.0573 6.03646 21.6719 7.42188C20.2865 8.80729 18.6042 9.5 16.625 9.5C15.9521 9.5 15.388 9.7276 14.9328 10.1828C14.4776 10.638 14.25 11.2021 14.25 11.875H9.5Z"
+            fill="#FBFBFB"
+          />
+        </svg>
+      </a>
       <div class="nav-flex">
-        <a>A Propos</a>
+        <a href="#about">A Propos</a>
         <a>Compétences</a>
 
         <a>Formation</a>
@@ -40,92 +45,109 @@
         <a>Réalisations</a>
         <a>Contact</a>
       </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24"
+        viewBox="0 -960 960 960"
+        width="24"
+        class="menu-toggler"
+      >
+        <path
+          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+        />
+      </svg>
     </nav>
-    <section class="hero-banner" id="hero-banner-section">
-      <div class="presentation-container">
-        <h1>Bonjour, je m’appelle Emmanuelle</h1>
-        <h2>& je recherche un poste de Chef de projet</h2>
-        <div class="icons-infos">
-          <div class="icon-infos-element">
-            <svg
-              width="142"
-              height="138"
-              viewBox="0 0 142 138"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                id="where_to_vote_FILL0_wght400_GRAD0_opsz24 1"
-                filter="url(#filter0_d_1_77)"
+    <section class="hero-banner" id="home">
+      <div class="presentation-container light">
+        <div class="container">
+          <h1>Bonjour, je m’appelle Emmanuelle</h1>
+          <h2>& je recherche un poste de Chef de projet</h2>
+          <div class="icons-infos">
+            <div class="icon-infos-element">
+              <svg
+                width="142"
+                height="138"
+                viewBox="0 0 142 138"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icons"
               >
-                <path
-                  id="Vector"
-                  d="M43.9625 76.2625L72.425 47.8L64.2312 39.6062L43.9625 59.875L35.9125 51.825L27.7188 60.0187L43.9625 76.2625ZM50 110.762C61.6917 100.029 70.3646 90.2781 76.0187 81.5094C81.6729 72.7406 84.5 64.9542 84.5 58.15C84.5 47.7042 81.1698 39.151 74.5094 32.4906C67.849 25.8302 59.6792 22.5 50 22.5C40.3208 22.5 32.151 25.8302 25.4906 32.4906C18.8302 39.151 15.5 47.7042 15.5 58.15C15.5 64.9542 18.3271 72.7406 23.9812 81.5094C29.6354 90.2781 38.3083 100.029 50 110.762ZM50 126C34.5708 112.871 23.0469 100.676 15.4281 89.4156C7.80937 78.1552 4 67.7333 4 58.15C4 43.775 8.62396 32.3229 17.8719 23.7937C27.1198 15.2646 37.8292 11 50 11C62.1708 11 72.8802 15.2646 82.1281 23.7937C91.376 32.3229 96 43.775 96 58.15C96 67.7333 92.1906 78.1552 84.5719 89.4156C76.9531 100.676 65.4292 112.871 50 126Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_1_77"
-                  x="0"
-                  y="0"
-                  width="146"
-                  height="146"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                <g
+                  id="where_to_vote_FILL0_wght400_GRAD0_opsz24 1"
+                  filter="url(#filter0_d_1_77)"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
+                  <path
+                    id="Vector"
+                    d="M43.9625 76.2625L72.425 47.8L64.2312 39.6062L43.9625 59.875L35.9125 51.825L27.7188 60.0187L43.9625 76.2625ZM50 110.762C61.6917 100.029 70.3646 90.2781 76.0187 81.5094C81.6729 72.7406 84.5 64.9542 84.5 58.15C84.5 47.7042 81.1698 39.151 74.5094 32.4906C67.849 25.8302 59.6792 22.5 50 22.5C40.3208 22.5 32.151 25.8302 25.4906 32.4906C18.8302 39.151 15.5 47.7042 15.5 58.15C15.5 64.9542 18.3271 72.7406 23.9812 81.5094C29.6354 90.2781 38.3083 100.029 50 110.762ZM50 126C34.5708 112.871 23.0469 100.676 15.4281 89.4156C7.80937 78.1552 4 67.7333 4 58.15C4 43.775 8.62396 32.3229 17.8719 23.7937C27.1198 15.2646 37.8292 11 50 11C62.1708 11 72.8802 15.2646 82.1281 23.7937C91.376 32.3229 96 43.775 96 58.15C96 67.7333 92.1906 78.1552 84.5719 89.4156C76.9531 100.676 65.4292 112.871 50 126Z"
+                    fill="white"
                   />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1_77"
+                    x="0"
+                    y="0"
+                    width="146"
+                    height="146"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_77"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_77"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+              <h1>Rennes</h1>
+            </div>
+            <div class="icon-infos-element">
+              <svg
+                width="130"
+                height="115"
+                viewBox="0 0 130 115"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icons"
+              >
+                <g id="timelapse_FILL0_wght400_GRAD0_opsz24 1">
+                  <path
+                    id="Vector"
+                    d="M65 86.25C74.0278 86.25 81.7014 83.4549 88.0208 77.8646C94.3403 72.2743 97.5 65.4861 97.5 57.5C97.5 49.5139 94.3403 42.7257 88.0208 37.1354C81.7014 31.5451 74.0278 28.75 65 28.75V57.5L41.9792 77.8646C45.1389 80.5 48.6823 82.5564 52.6094 84.0339C56.5365 85.5113 60.6667 86.25 65 86.25ZM65 105.417C57.5069 105.417 50.4653 104.159 43.875 101.643C37.2847 99.1276 31.5521 95.7135 26.6771 91.401C21.8021 87.0885 17.9427 82.0174 15.099 76.1875C12.2552 70.3576 10.8333 64.1285 10.8333 57.5C10.8333 50.8715 12.2552 44.6424 15.099 38.8125C17.9427 32.9826 21.8021 27.9115 26.6771 23.599C31.5521 19.2865 37.2847 15.8724 43.875 13.3568C50.4653 10.8411 57.5069 9.58333 65 9.58333C72.4931 9.58333 79.5347 10.8411 86.125 13.3568C92.7153 15.8724 98.4479 19.2865 103.323 23.599C108.198 27.9115 112.057 32.9826 114.901 38.8125C117.745 44.6424 119.167 50.8715 119.167 57.5C119.167 64.1285 117.745 70.3576 114.901 76.1875C112.057 82.0174 108.198 87.0885 103.323 91.401C98.4479 95.7135 92.7153 99.1276 86.125 101.643C79.5347 104.159 72.4931 105.417 65 105.417ZM65 95.8333C77.0972 95.8333 87.3438 92.1198 95.7396 84.6927C104.135 77.2656 108.333 68.2014 108.333 57.5C108.333 46.7986 104.135 37.7344 95.7396 30.3073C87.3438 22.8802 77.0972 19.1667 65 19.1667C52.9028 19.1667 42.6562 22.8802 34.2604 30.3073C25.8646 37.7344 21.6667 46.7986 21.6667 57.5C21.6667 68.2014 25.8646 77.2656 34.2604 84.6927C42.6562 92.1198 52.9028 95.8333 65 95.8333Z"
+                    fill="white"
                   />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_1_77"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_1_77"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-            <h1>Rennes</h1>
-          </div>
-          <div class="icon-infos-element">
-            <svg
-              width="130"
-              height="115"
-              viewBox="0 0 130 115"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="timelapse_FILL0_wght400_GRAD0_opsz24 1">
-                <path
-                  id="Vector"
-                  d="M65 86.25C74.0278 86.25 81.7014 83.4549 88.0208 77.8646C94.3403 72.2743 97.5 65.4861 97.5 57.5C97.5 49.5139 94.3403 42.7257 88.0208 37.1354C81.7014 31.5451 74.0278 28.75 65 28.75V57.5L41.9792 77.8646C45.1389 80.5 48.6823 82.5564 52.6094 84.0339C56.5365 85.5113 60.6667 86.25 65 86.25ZM65 105.417C57.5069 105.417 50.4653 104.159 43.875 101.643C37.2847 99.1276 31.5521 95.7135 26.6771 91.401C21.8021 87.0885 17.9427 82.0174 15.099 76.1875C12.2552 70.3576 10.8333 64.1285 10.8333 57.5C10.8333 50.8715 12.2552 44.6424 15.099 38.8125C17.9427 32.9826 21.8021 27.9115 26.6771 23.599C31.5521 19.2865 37.2847 15.8724 43.875 13.3568C50.4653 10.8411 57.5069 9.58333 65 9.58333C72.4931 9.58333 79.5347 10.8411 86.125 13.3568C92.7153 15.8724 98.4479 19.2865 103.323 23.599C108.198 27.9115 112.057 32.9826 114.901 38.8125C117.745 44.6424 119.167 50.8715 119.167 57.5C119.167 64.1285 117.745 70.3576 114.901 76.1875C112.057 82.0174 108.198 87.0885 103.323 91.401C98.4479 95.7135 92.7153 99.1276 86.125 101.643C79.5347 104.159 72.4931 105.417 65 105.417ZM65 95.8333C77.0972 95.8333 87.3438 92.1198 95.7396 84.6927C104.135 77.2656 108.333 68.2014 108.333 57.5C108.333 46.7986 104.135 37.7344 95.7396 30.3073C87.3438 22.8802 77.0972 19.1667 65 19.1667C52.9028 19.1667 42.6562 22.8802 34.2604 30.3073C25.8646 37.7344 21.6667 46.7986 21.6667 57.5C21.6667 68.2014 25.8646 77.2656 34.2604 84.6927C42.6562 92.1198 52.9028 95.8333 65 95.8333Z"
-                  fill="white"
-                />
-              </g>
-            </svg>
-            <h1>Immédiatement</h1>
+                </g>
+              </svg>
+              <h1>Immédiatement</h1>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section></section>
+    <section id="about">
+      <div class="presentation-container main"></div>
+    </section>
     <script src="index.js"></script>
   </body>
 </html>

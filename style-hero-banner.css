@@ -4,24 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: 2;
-}
-.hero-banner-loading-image {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-.presentation-container {
-  background-image: url('assets/images/Carré_présentation.png');
-  background-position: center;
-  background-repeat: repeat-x;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  transition-duration: 0.5s;
 }
 
 .icons-infos {

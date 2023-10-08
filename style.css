@@ -2,6 +2,10 @@
   --var-green: #387067;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -14,20 +18,6 @@ nav {
   gap: 140px;
   position: fixed;
   width: 100%;
-}
-
-.nav-flex {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-}
-.nav-flex a {
-  color: white;
-  font-size: 30px;
-  font-family: Montserrat;
-  font-weight: 400;
-  text-transform: capitalize;
-  word-wrap: break-word;
 }
 
 section {
@@ -50,4 +40,23 @@ h2 {
   font-weight: 400;
   text-transform: lowercase;
   word-wrap: break-word;
+}
+
+.presentation-container {
+  background-position: center;
+  background-repeat: repeat-x;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-container.main {
+  background-image: url('assets/images/carre_presentation/Carré_présentation_main.png');
+}
+
+.presentation-container.light {
+  background-image: url('assets/images/carre_presentation/Carré_présentation_light.png');
 }

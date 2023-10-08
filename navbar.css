@@ -1,0 +1,27 @@
+.home-icon {
+  cursor: pointer;
+}
+
+.menu-toggler {
+  fill: white;
+  position: fixed;
+  top: 5px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.nav-flex a {
+  color: white;
+  font-size: 30px;
+  font-family: Montserrat;
+  font-weight: 400;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}

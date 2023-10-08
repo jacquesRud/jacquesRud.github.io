@@ -3,12 +3,14 @@ const imageIsloaded = (src, element) => {
   let preloaderImg = document.createElement('img');
   preloaderImg.src = src;
   preloaderImg.addEventListener('load', (event) => {
-    bgElement.style.backgroundImage = `url(${src})`;
-    preloaderImg = null;
+    setTimeout(() => {
+      bgElement.style.backgroundImage = `url(${src})`;
+      preloaderImg = null;
+    }, 2000);
   });
 };
 
 imageIsloaded(
   'assets/images/background/full/backgroundHeroBanner.jpg',
-  '#hero-banner-section'
+  '#home'
 );
