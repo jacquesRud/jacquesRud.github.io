@@ -3,10 +3,8 @@ const imageIsloaded = (src, element) => {
   let preloaderImg = document.createElement('img');
   preloaderImg.src = src;
   preloaderImg.addEventListener('load', (event) => {
-    setTimeout(() => {
-      bgElement.style.backgroundImage = `url(${src})`;
-      preloaderImg = null;
-    }, 2000);
+    bgElement.style.backgroundImage = `url(${src})`;
+    preloaderImg = null;
   });
 };
 
