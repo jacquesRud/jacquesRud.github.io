@@ -25,3 +25,8 @@
   text-transform: capitalize;
   word-wrap: break-word;
 }
+
+.icon-navbar {
+  height: 57px;
+  color: white;
+}

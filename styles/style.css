@@ -1,5 +1,7 @@
 :root {
-  --var-green: #387067;
+  --var-green: #387067cc;
+  --var-green-light: rgba(123, 189, 177, 0.5);
+  --background-navbar: rgba(0, 0, 0, 0.3);
 }
 
 html {
@@ -11,13 +13,13 @@ body {
 }
 
 nav {
-  background-color: var(--var-green);
-  opacity: 0.8;
-  padding: 0px 20px;
+  background-color: var(--background-navbar);
   display: flex;
   gap: 140px;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  padding: 5px;
+  z-index: 99;
+  top: 0px;
 }
 
 section {
@@ -35,6 +37,14 @@ h1 {
 
 h2 {
   color: white;
+  font-size: 60px;
+  font-family: Knewave;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.subtitle {
+  color: white;
   font-size: 50px;
   font-family: Montserrat;
   font-weight: 400;
@@ -43,20 +53,22 @@ h2 {
 }
 
 .presentation-container {
-  background-position: center;
   background-repeat: repeat-x;
-  height: 100%;
+  height: 90%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-position: top;
 }
 
 .presentation-container.main {
-  background-image: url('assets/images/carre_presentation/Carré_présentation_main.png');
+  background-image: url('../assets/images/carre_presentation/Carré\ présentation.svg');
+  background-repeat: repeat-x;
 }
 
 .presentation-container.light {
-  background-image: url('assets/images/carre_presentation/Carré_présentation_light.png');
+  background-image: url('../assets/images/carre_presentation/Carré\ présentation_light.svg');
+  background-repeat: repeat-x;
 }
