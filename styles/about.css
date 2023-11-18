@@ -26,7 +26,7 @@
 
 .container-keywords {
   grid-row: 2;
-  grid-column: 3;
+  grid-column: 2/4;
   justify-content: space-around;
   gap: 25px;
   display: flex;
@@ -60,6 +60,10 @@
   gap: 20px;
   cursor: pointer;
   height: 150px;
+}
+.badge:hover {
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
 }
 
 .horizontal-separator {
