@@ -24,11 +24,6 @@
   text-align: center;
 }
 
-.flex {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .container-keywords {
   grid-row: 2;
   grid-column: 3;
