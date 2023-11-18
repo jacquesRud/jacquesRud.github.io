@@ -9,6 +9,10 @@
   href="https://fonts.googleapis.com/css2?family=Knewave&family=Montserrat&display=swap"
   rel="stylesheet"
 />
+<link
+  href="https://fonts.googleapis.com/css2?family=Knewave&family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap"
+  rel="stylesheet"
+/>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -30,16 +34,19 @@
       </a>
       <div class="nav-flex">
         <a href="#about">A Propos</a>
+        <a>Réalisations</a>
+
         <a>Compétences</a>
 
         <a>Formation</a>
 
-        <a>Réalisations</a>
         <a>Contact</a>
       </div>
-      <span class="material-symbols-outlined icon-navbar menu-toggler">
-        menu
-      </span>
+      <img
+        class="icon-navbar menu-toggler"
+        src="assets/images/icons/menu.svg"
+        alt="home"
+      />
     </nav>
     <section class="hero-banner" id="home">
       <div class="presentation-container light">
@@ -49,7 +56,7 @@
           <div class="icons-infos">
             <div class="icon-infos-element">
               <img
-                class="icon-hero"
+                class="icon"
                 src="assets/images/icons/where_to_vote.svg"
                 alt="where"
               />
@@ -71,9 +78,60 @@
           </div>
         </div>
       </div>
+      <div class="wave wave-light"></div>
     </section>
     <section id="about">
-      <div class="presentation-container main top"></div>
+      <div class="presentation-container primary">
+        <div class="container">
+          <div class="display about">
+            <img
+              src="assets/images/photos/photo_Emmanuelle.png"
+              alt="photo"
+              class="photo"
+            />
+
+            <div class="description">
+              <img
+                src="assets/images/icons/quotes.svg"
+                alt="quotes"
+                class="quotes"
+              />
+              <h4 class="text-description">
+                De nature <b>curieuse</b>, <b>engagée</b> et
+                <b>enthousiaste</b> je recherche toujours à approfondir mes
+                connaissances à travers de <b>nouveaux challenges</b>. Dotée
+                d'un bon sens de l'organisation, d'une forte
+                <b>polyvalence</b> et d'une <b>grande créativité</b> j'aime
+                intervenir sur de la gestion de projets variés.
+              </h4>
+            </div>
+            <img
+              src="assets/images/icons/heart.svg"
+              alt="heart"
+              class="heart-icon"
+            />
+            <div class="container-keywords">
+              <h2>Voyages</h2>
+              <h2>Planche à voile</h2>
+              <h2>Lecture</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wave wave-primary"></div>
+      <div class="container-badge flex">
+        <div class="badge icons">
+          <img src="assets/images/icons/car.svg" alt="car" class="icon-badge" />
+          <hr class="horizontal-separator" />
+          <img
+            src="assets/images/icons/boat.svg"
+            alt="boat"
+            class="icon-badge"
+          />
+        </div>
+        <div class="badge"><h2>Mon CV</h2></div>
+        <div class="badge"><h2>Contact</h2></div>
+      </div>
     </section>
     <script src="index.js"></script>
   </body>

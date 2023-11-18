@@ -27,10 +27,3 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.line-svg {
-  width: 100%;
-  height: 100px;
-  background-image: url('./assets/images/line/line.svg');
-  background-repeat: repeat-x;
-}

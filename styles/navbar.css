@@ -1,6 +1,9 @@
 .home-icon {
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 
 .menu-toggler {
   fill: white;

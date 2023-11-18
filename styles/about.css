@@ -1,1 +1,81 @@
+.display {
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px 5px;
+  padding: 20px;
+}
 
+.photo {
+  grid-column: 1/3;
+  grid-row: 1;
+  width: 350px;
+  height: 450px;
+}
+
+.description {
+  grid-column: 3;
+  grid-row: 1;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-keywords {
+  grid-row: 2;
+  grid-column: 3;
+  justify-content: space-around;
+  gap: 25px;
+  display: flex;
+}
+
+.heart-icon {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.text-description {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+}
+
+.container-badge {
+  justify-content: space-around;
+  padding: 0px 20px;
+  margin: 20px 0px;
+  gap: 10px;
+}
+
+.badge {
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--var-grey-dark);
+  padding: 0px 60px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.horizontal-separator {
+  position: relative;
+  border: none;
+  height: 80%;
+  background-color: var(--var-green);
+  width: 4px;
+  margin: 20px 0;
+}
+
+.horizontal-separator::after {
+  top: auto;
+  bottom: -10px; /* Adjust the position of the bottom circle */
+}

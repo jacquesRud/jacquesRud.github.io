@@ -23,6 +23,24 @@
   .icon {
     width: 60px;
   }
+
+  .display.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .quotes {
+    display: none;
+  }
+  .icon-badge {
+    width: 80px;
+  }
+  .badge {
+    padding: 10px 60px;
+  }
 }
 @media screen and (min-width: 1023px) {
   .menu-toggler {
