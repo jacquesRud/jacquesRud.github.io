@@ -15,13 +15,14 @@
 />
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emmanuelle RUDLOFF</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/style-hero-banner.css" />
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/realisation.css" />
   </head>
   <body>
     <nav>
@@ -34,7 +35,7 @@
       </a>
       <div class="nav-flex">
         <a href="#about">A Propos</a>
-        <a>Réalisations</a>
+        <a href="#realisation">Réalisations</a>
 
         <a>Compétences</a>
 
@@ -83,7 +84,7 @@
     <section id="about">
       <div class="presentation-container primary">
         <div class="container">
-          <div class="display about">
+          <div class="display about about">
             <img
               src="assets/images/photos/photo_Emmanuelle.png"
               alt="photo"
@@ -108,7 +109,7 @@
             <img
               src="assets/images/icons/heart.svg"
               alt="heart"
-              class="heart-icon"
+              class="heart-icon no-mobile"
             />
             <div class="container-keywords">
               <h2>Voyages</h2>
@@ -131,6 +132,44 @@
         </div>
         <div class="badge" onclick="downloadCV()"><h2>Mon CV</h2></div>
         <div class="badge" onclick="sendEmail()"><h2>Contact</h2></div>
+      </div>
+    </section>
+    <section id="realisation">
+      <div class="realisation-container">
+        <div class="container realisation-flex">
+          <div class="date-container">
+            <img src="assets/images/icons/date-icon.svg" alt="date-1" />
+            <div>
+              <p class="date-text">Octobre 2013</p>
+              <p class="date-text">Octobre 2016</p>
+            </div>
+          </div>
+          <img
+            src="assets/images/line/line-green.svg"
+            alt="line"
+            class="line-green"
+          />
+          <div class="experience-box">
+            <div class="text-box">
+              <p class="subtitle2">
+                analyser & piloter les ventes : +7% de ca sur un territoire
+                “farming”
+              </p>
+              <p class="subtitle2">
+                organiser des formations autour des produits & services du
+                groupe
+              </p>
+              <p class="subtitle2">
+                conseiller les clients transporteurs afin d’optimiser leur roi
+                en leur apportant des éléments techniques
+              </p>
+              <p class="subtitle2">
+                promouvoir la marque lors d’évènements ou de salons (24H du mans
+                en 2019)
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <script src="index.js"></script>

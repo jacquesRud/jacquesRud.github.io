@@ -1,14 +1,22 @@
 @media screen and (max-width: 1023px) {
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   h2 {
     font-size: 30px;
   }
 
+  .no-mobile {
+    display: none;
+  }
+
   .subtitle {
     font-size: 30px;
+  }
+
+  .subtitle2 {
+    font-size: 20px;
   }
 
   .nav-flex {
@@ -31,6 +39,7 @@
   }
   .flex {
     flex-direction: column;
+    align-items: center;
   }
   .quotes {
     display: none;
@@ -41,6 +50,11 @@
   .badge {
     padding: 10px 60px;
     height: 60px;
+  }
+  .container-keywords {
+    background-image: url('../assets/images/icons/heart.svg');
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 1023px) {

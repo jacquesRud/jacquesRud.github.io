@@ -1,0 +1,42 @@
+.experience-box {
+  background-color: var(--var-grey-dark);
+  border-radius: 160px;
+  text-align: center;
+  max-width: 1200px;
+  padding: 0px 40px;
+  align-items: center;
+}
+
+.line-green {
+  position: relative;
+  left: 100px;
+}
+
+.text-box {
+  width: 80%;
+  float: right;
+}
+
+.realisation-container {
+  display: flex;
+}
+
+.date-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.date-text {
+  color: var(--var-green-light);
+  font-family: Knewave;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.realisation-flex {
+  display: flex;
+  align-items: center;
+}

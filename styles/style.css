@@ -3,7 +3,7 @@
   --var-green-light: rgba(123, 189, 177, 0.5);
   --background-navbar: rgba(0, 0, 0, 0.3);
   --var-grey: #d9d9d9;
-  --var-grey-dark: #808080;
+  --var-grey-dark: #a0a0a0;
 }
 
 html {
@@ -16,6 +16,7 @@ body {
 
 .flex {
   display: flex;
+  align-items: center;
 }
 
 nav {
@@ -30,7 +31,7 @@ nav {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 h1 {
@@ -62,6 +63,15 @@ h4 {
 .subtitle {
   color: white;
   font-size: 50px;
+  font-family: Montserrat;
+  font-weight: 400;
+  text-transform: lowercase;
+  word-wrap: break-word;
+}
+
+.subtitle2 {
+  color: white;
+  font-size: 30px;
   font-family: Montserrat;
   font-weight: 400;
   text-transform: lowercase;
