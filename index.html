@@ -25,116 +25,121 @@
     <link rel="stylesheet" href="styles/realisation.css" />
   </head>
   <body>
-    <nav>
-      <a href="#home">
+    <main>
+      <nav>
+        <a href="#home">
+          <img
+            class="icon-navbar"
+            src="assets/images/icons/cottage.svg"
+            alt="home"
+          />
+        </a>
+        <div class="nav-flex">
+          <a href="#about">A Propos</a>
+          <a href="#realisation">Réalisations</a>
+
+          <a>Compétences</a>
+
+          <a>Formation</a>
+
+          <a>Contact</a>
+        </div>
         <img
-          class="icon-navbar"
-          src="assets/images/icons/cottage.svg"
+          class="icon-navbar menu-toggler"
+          src="assets/images/icons/menu.svg"
           alt="home"
         />
-      </a>
-      <div class="nav-flex">
-        <a href="#about">A Propos</a>
-        <a href="#realisation">Réalisations</a>
-
-        <a>Compétences</a>
-
-        <a>Formation</a>
-
-        <a>Contact</a>
-      </div>
-      <img
-        class="icon-navbar menu-toggler"
-        src="assets/images/icons/menu.svg"
-        alt="home"
-      />
-    </nav>
-    <section class="hero-banner" id="home">
-      <div class="presentation-container light">
-        <div class="container">
-          <h1>Bonjour, je m’appelle Emmanuelle</h1>
-          <p class="subtitle">& je recherche un poste de Chef de projet</p>
-          <div class="icons-infos">
-            <div class="icon-infos-element">
-              <img
-                class="icon"
-                src="assets/images/icons/where_to_vote.svg"
-                alt="where"
-              />
-              <h1>Rennes</h1>
+      </nav>
+      <section class="hero-banner" id="home">
+        <div class="presentation-container light">
+          <div class="container">
+            <h1>Bonjour, je m’appelle Emmanuelle</h1>
+            <p class="subtitle">& je recherche un poste de Chef de projet</p>
+            <div class="icons-infos">
+              <div class="icon-infos-element">
+                <img
+                  class="icon"
+                  src="assets/images/icons/where_to_vote.svg"
+                  alt="where"
+                />
+                <h1>Rennes</h1>
+              </div>
+              <div class="icon-infos-element">
+                <img
+                  class="icon"
+                  src="assets/images/icons/timelapse.svg"
+                  alt="when"
+                />
+                <h1>Immédiatement</h1>
+              </div>
             </div>
-            <div class="icon-infos-element">
-              <img
-                class="icon"
-                src="assets/images/icons/timelapse.svg"
-                alt="when"
-              />
-              <h1>Immédiatement</h1>
+            <div class="keyword-container flex">
+              <h2>Autonomie</h2>
+              <h2>Empathie</h2>
+              <h2>Curiosité</h2>
             </div>
-          </div>
-          <div class="keyword-container flex">
-            <h2>Autonomie</h2>
-            <h2>Empathie</h2>
-            <h2>Curiosité</h2>
           </div>
         </div>
-      </div>
-      <div class="wave wave-light"></div>
-    </section>
-    <section id="about">
-      <div class="presentation-container primary">
-        <div class="container">
-          <div class="display about about">
+        <div class="wave wave-light"></div>
+      </section>
+      <section id="about">
+        <div class="presentation-container primary">
+          <div class="container">
+            <div class="display about about">
+              <img
+                src="assets/images/photos/photo_Emmanuelle.png"
+                alt="photo"
+                class="photo"
+              />
+
+              <div class="description">
+                <img
+                  src="assets/images/icons/quotes.svg"
+                  alt="quotes"
+                  class="quotes"
+                />
+                <h4 class="text-description">
+                  De nature <b>curieuse</b>, <b>engagée</b> et
+                  <b>enthousiaste</b> je recherche toujours à approfondir mes
+                  connaissances à travers de <b>nouveaux challenges</b>. Dotée
+                  d'un bon sens de l'organisation, d'une forte
+                  <b>polyvalence</b> et d'une <b>grande créativité</b> j'aime
+                  intervenir sur de la gestion de projets variés.
+                </h4>
+              </div>
+              <img
+                src="assets/images/icons/heart.svg"
+                alt="heart"
+                class="heart-icon no-mobile"
+              />
+              <div class="container-keywords">
+                <h2>Voyages</h2>
+                <h2>Planche à voile</h2>
+                <h2>Lecture</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave wave-primary"></div>
+        <div class="container-badge flex">
+          <div class="badge">
             <img
-              src="assets/images/photos/photo_Emmanuelle.png"
-              alt="photo"
-              class="photo"
+              src="assets/images/icons/car.svg"
+              alt="car"
+              class="icon-badge"
             />
-
-            <div class="description">
-              <img
-                src="assets/images/icons/quotes.svg"
-                alt="quotes"
-                class="quotes"
-              />
-              <h4 class="text-description">
-                De nature <b>curieuse</b>, <b>engagée</b> et
-                <b>enthousiaste</b> je recherche toujours à approfondir mes
-                connaissances à travers de <b>nouveaux challenges</b>. Dotée
-                d'un bon sens de l'organisation, d'une forte
-                <b>polyvalence</b> et d'une <b>grande créativité</b> j'aime
-                intervenir sur de la gestion de projets variés.
-              </h4>
-            </div>
+            <hr class="horizontal-separator" />
             <img
-              src="assets/images/icons/heart.svg"
-              alt="heart"
-              class="heart-icon no-mobile"
+              src="assets/images/icons/boat.svg"
+              alt="boat"
+              class="icon-badge"
             />
-            <div class="container-keywords">
-              <h2>Voyages</h2>
-              <h2>Planche à voile</h2>
-              <h2>Lecture</h2>
-            </div>
           </div>
+          <div class="badge" onclick="downloadCV()"><h2>Mon CV</h2></div>
+          <div class="badge" onclick="sendEmail()"><h2>Contact</h2></div>
         </div>
-      </div>
-      <div class="wave wave-primary"></div>
-      <div class="container-badge flex">
-        <div class="badge">
-          <img src="assets/images/icons/car.svg" alt="car" class="icon-badge" />
-          <hr class="horizontal-separator" />
-          <img
-            src="assets/images/icons/boat.svg"
-            alt="boat"
-            class="icon-badge"
-          />
-        </div>
-        <div class="badge" onclick="downloadCV()"><h2>Mon CV</h2></div>
-        <div class="badge" onclick="sendEmail()"><h2>Contact</h2></div>
-      </div>
-    </section>
-    <!-- <section id="realisation">
+      </section>
+      <!-- <section id="realisation">
       <div class="realisation-container">
         <div class="container realisation-flex">
           <div class="date-container">
@@ -172,6 +177,7 @@
         </div>
       </div>
     </section> -->
-    <script src="index.js"></script>
+      <script src="index.js"></script>
+    </main>
   </body>
 </html>
