@@ -8,17 +8,12 @@
 }
 
 .line-green {
-  position: relative;
-  left: 100px;
+  z-index: 3;
 }
 
 .text-box {
   width: 80%;
   float: right;
-}
-
-.realisation-container {
-  display: flex;
 }
 
 .date-container {
@@ -27,16 +22,28 @@
   justify-content: center;
   align-items: center;
   float: left;
+  z-index: 2;
 }
 
 .date-text {
-  color: var(--var-green-light);
+  color: var(--var-green-font);
   font-family: Knewave;
   font-size: 30px;
   font-weight: 400;
+  margin: 0px;
 }
 
 .realisation-flex {
   display: flex;
   align-items: center;
+}
+
+.title-experience {
+  position: relative;
+  bottom: 50px;
+}
+
+.responsive-date {
+  position: relative;
+  bottom: 30px;
 }

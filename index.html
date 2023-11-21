@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/style-hero-banner.css" />
     <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
     <link rel="stylesheet" href="styles/realisation.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
     <main>
@@ -45,9 +45,9 @@
           <a>Contact</a>
         </div>
         <img
-          class="icon-navbar menu-toggler"
+          class="icon-navbar menu-toggler mobile-only"
           src="assets/images/icons/menu.svg"
-          alt="home"
+          alt="menu-mobile"
         />
       </nav>
       <section class="hero-banner" id="home">
@@ -139,44 +139,94 @@
           <div class="badge" onclick="sendEmail()"><h2>Contact</h2></div>
         </div>
       </section>
-      <!-- <section id="realisation">
-      <div class="realisation-container">
-        <div class="container realisation-flex">
-          <div class="date-container">
-            <img src="assets/images/icons/date-icon.svg" alt="date-1" />
-            <div>
-              <p class="date-text">Octobre 2013</p>
-              <p class="date-text">Octobre 2016</p>
+      <section id="realisation" class="no-overflow">
+        <div>
+          <div class="container flex">
+            <div class="date-container no-mobile">
+              <img src="assets/images/icons/date-icon.svg" alt="date-1" />
+              <div>
+                <p class="date-text">Février 2023</p>
+                <p class="date-text">Septembre 2023</p>
+              </div>
+            </div>
+            <img
+              src="assets/images/line/lineGreen/line-green-0.svg"
+              alt="line"
+              class="line-green no-mobile"
+            />
+            <div class="experience-box">
+              <div class="text-box">
+                <div class="title-experience">
+                  <p class="date-text">
+                    Cheffe de Projet Transformation Digitale
+                  </p>
+                  <p class="date-text">Groupe Guisnel</p>
+                </div>
+                <p class="date-text responsive-date">
+                  Février 2023 - Septembre 2023
+                </p>
+
+                <p class="subtitle2">
+                  cadrer les besoins avec l’équipe projet & rédiger le cahier
+                  des charges avec les spécifications
+                </p>
+                <p class="subtitle2">
+                  réaliser le benchmark des différents fournisseurs
+                </p>
+                <p class="subtitle2">
+                  piloter la standardisation de l’outil de travail
+                </p>
+                <p class="subtitle2">
+                  créer un tableau de bord de suivi de contrats avec les
+                  différents fournisseurs de pièces détachées
+                </p>
+              </div>
             </div>
           </div>
-          <img
-            src="assets/images/line/line-green.svg"
-            alt="line"
-            class="line-green"
-          />
-          <div class="experience-box">
-            <div class="text-box">
-              <p class="subtitle2">
-                analyser & piloter les ventes : +7% de ca sur un territoire
-                “farming”
-              </p>
-              <p class="subtitle2">
-                organiser des formations autour des produits & services du
-                groupe
-              </p>
-              <p class="subtitle2">
-                conseiller les clients transporteurs afin d’optimiser leur roi
-                en leur apportant des éléments techniques
-              </p>
-              <p class="subtitle2">
-                promouvoir la marque lors d’évènements ou de salons (24H du mans
-                en 2019)
-              </p>
+          <div class="flex container">
+            <div class="date-container no-mobile">
+              <img src="assets/images/icons/date-icon.svg" alt="date-1" />
+              <div>
+                <p class="date-text">Février 2023</p>
+                <p class="date-text">Septembre 2023</p>
+              </div>
+            </div>
+            <img
+              src="assets/images/line/lineGreen/line-green-0.svg"
+              alt="line"
+              class="line-green no-mobile"
+            />
+            <div class="experience-box">
+              <div class="text-box">
+                <div class="title-experience">
+                  <p class="date-text">
+                    Cheffe de Projet Transformation Digitale
+                  </p>
+                  <p class="date-text">Groupe Guisnel</p>
+                </div>
+                <p class="date-text responsive-date">
+                  Février 2023 - Septembre 2023
+                </p>
+
+                <p class="subtitle2">
+                  cadrer les besoins avec l’équipe projet & rédiger le cahier
+                  des charges avec les spécifications
+                </p>
+                <p class="subtitle2">
+                  réaliser le benchmark des différents fournisseurs
+                </p>
+                <p class="subtitle2">
+                  piloter la standardisation de l’outil de travail
+                </p>
+                <p class="subtitle2">
+                  créer un tableau de bord de suivi de contrats avec les
+                  différents fournisseurs de pièces détachées
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
+      </section>
       <script src="index.js"></script>
     </main>
   </body>
